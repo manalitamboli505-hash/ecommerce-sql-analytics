@@ -1,0 +1,7 @@
+Validated SQL query result sets: 12
+Customers: 240
+Products: 32
+Orders: 950
+Order items: 2417
+SQL dialect: SQLite 3.x
+Data: synthetic
