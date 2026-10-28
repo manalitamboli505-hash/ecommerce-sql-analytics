@@ -41,14 +41,6 @@ ecommerce_sql_analytics_project/
 └── README.md
 ```
 
-## Run it
-Requires Python 3.10+ and pandas:
-```bash
-pip install pandas
-python sql/load_data.py
-```
-Open `ecommerce_analytics.db` with DB Browser for SQLite, SQLiteStudio, or Python's `sqlite3`. Run the queries in `sql/02_business_analysis_queries.sql`. The SQL dialect is SQLite 3.x.
-
 ## Metric definitions and caveats
 - Net sales = quantity × charged unit price × (1 − discount).
 - Revenue queries count only `Delivered` orders.
@@ -56,5 +48,3 @@ Open `ecommerce_analytics.db` with DB Browser for SQLite, SQLiteStudio, or Pytho
 - Average order value is calculated after summing line items per order.
 - The inactivity query uses the maximum order date in this dataset as its reference date, not today's date.
 
-## Portfolio guidance
-Run the queries, check the outputs, and write 3–5 observations in your own words before adding this to your portfolio. Be ready to explain why each join is used, how the CTEs work, and how the window functions calculate rankings and month-over-month change.
